@@ -16,12 +16,16 @@ const MovieDetails = ({navigation, route: {params}}) => {
   // alert(JSON.stringify(data))
   return (
     <View style={{flex: 1}}>
-      <Header title="Movies" BackImg={require('../assets/back.png')} img={require('../assets/logout.png')}/>
+      <Header
+        title="Movies"
+        BackImg={require('../assets/back.png')}
+        img={require('../assets/logout.png')}
+      />
       {/* <ScrollView>
       </ScrollView> */}
       <View style={{backgroundColor: '#3f6c89', height: 250}}>
         <View
-          style={{flexDirection: 'row', height: 150, width:"70%", margin: 20}}>
+          style={{flexDirection: 'row', height: 150, width: '70%', margin: 20}}>
           <Image
             source={{uri: data.image}}
             style={{height: '100%', width: '40%'}}
@@ -31,17 +35,14 @@ const MovieDetails = ({navigation, route: {params}}) => {
               fontSize: 14,
               color: '#fff',
               textAlign: 'center',
-              marginHorizontal:"15%",
+              marginHorizontal: '15%',
             }}>
-            {data.title}{"\n"}
-            R | 3h 7min | 30 Dec 2021
-            Reviews: 10(Critics) 2345 (Users)
+            {data.title}
+            {'\n'}R | 3h 7min | 30 Dec 2021 Reviews: 10(Critics) 2345 (Users)
           </Text>
         </View>
         <View style={{alignItems: 'flex-end', marginTop: 40, marginRight: 10}}>
-          <TouchableOpacity 
-          activeOpacity={0.9}
-          style={styles.btn}>
+          <TouchableOpacity activeOpacity={0.9} style={styles.btn}>
             <Text style={{color: '#3f6c89', fontWeight: '800'}}>BOOK NOW</Text>
           </TouchableOpacity>
         </View>
@@ -77,7 +78,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
   },
-  Txt:{
-    borderRadius:20, borderWidth:1, borderColor:"#fff", height:30, width:100
-  }
+  Txt: {
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: '#fff',
+    height: 30,
+    width: 100,
+  },
 });

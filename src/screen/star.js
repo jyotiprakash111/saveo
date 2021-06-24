@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
 // import { AntDesign } from '@expo/vector-icons';
 
-export default function Rating({ rating }) {
+export default function Rating({rating}) {
   const filledStars = Math.floor(rating / 2);
   const maxStars = Array(5 - filledStars).fill('staro');
   const r = [...Array(filledStars).fill('star'), ...maxStars];
@@ -19,11 +19,11 @@ export default function Rating({ rating }) {
 }
 
 const styles = StyleSheet.create({
-  ratingNumber: { marginRight: 4, fontFamily: 'Menlo', fontSize: 14 },
+  ratingNumber: {marginRight: 4, fontFamily: 'Menlo', fontSize: 14},
   rating: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    marginVertical: 4
+    marginVertical: 4,
   },
 });

@@ -30,17 +30,26 @@ const App = () => {
 
   return (
     <View style={{flex: 1}}>
-      <Header title="Movies" BackImg={require('../assets/menu.png')} img={require('../assets/search.png')}/>
+      <Header
+        title="Movies"
+        BackImg={require('../assets/menu.png')}
+        img={require('../assets/search.png')}
+      />
 
-      <ScrollView 
-      showsHorizontalScrollIndicator={false}>
+      <ScrollView showsHorizontalScrollIndicator={false}>
         <View style={{height: 200, backgroundColor: '#3f6c89'}}>
           <Slider />
-          <View style={{height: 50, width: '100%', justifyContent:"center",alignItems:"center"}}>
-          <Text
-            style={{textAlign: 'center', fontWeight: 'bold', color: '#fff'}}>
-            Now Showing
-          </Text>
+          <View
+            style={{
+              height: 50,
+              width: '100%',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}>
+            <Text
+              style={{textAlign: 'center', fontWeight: 'bold', color: '#fff'}}>
+              Now Showing
+            </Text>
           </View>
         </View>
         <FlatList

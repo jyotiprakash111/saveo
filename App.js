@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from './src/navigation/mainnavigation';
+import Nav from './src/navigation/mainNavigator';
 // import List from './src/screen/List';
 // import List from './src/screen/xxx';
 import List from './src/screen/slider';
